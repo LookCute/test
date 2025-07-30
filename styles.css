@@ -118,10 +118,6 @@ html{
     padding-right: clamp(10px, 3vw, 60px);
 }
 
-.about-info{
-    transform: translate(10%, 110%);
-}
-
 .about-info h1{
     font-size: 70px;
     font-size: clamp(30px, 4vw, 70px);
@@ -511,11 +507,12 @@ html{
 
 /* footer */
 .footer{
-    height: 40vh;
+    height: auto;
     background-color: var(--second-background-color);
     padding-top: clamp(30px, 5vw, 80px);
     padding-left: clamp(10px, 3vw, 60px);
     padding-right: clamp(10px, 3vw, 60px); 
+    padding-bottom: clamp(10px, 6vw, 100px); 
 }
 
 .footer h3{
@@ -528,6 +525,7 @@ html{
 .row{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 50px;
 }
 
 .col p{
@@ -536,16 +534,50 @@ html{
     margin-bottom: 15px;
     color: var(--color-black);
     transition: color 0.15s;
+    cursor: pointer;
 }
 
 .col p:hover{
     color: gray;
 }
 
+.col p:active{
+    color: var(--color-active);
+}
+
 .footer h1{
     font-size: 20px;
     font-family: "MuseoModerno", sans-serif;
     margin-bottom: clamp(30px, 6vw, 50px);
+}
+
+.con-front p{
+    font-weight: bold;
+    margin: 15px 15px 15px 0px;
+}
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+    border-top: 1px solid rgb(216, 216, 216);
+}
+
+.con-back{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.con-back a{
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+.con-back p{
+    font-weight: bold;
 }
 
 
